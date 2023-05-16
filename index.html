@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +10,29 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <a href="/">🧙‍♂️ Notnian</a>
         <a href="mailto:contact@notnian.dev">Mail</a>
-        <a href="/notnian.gpg">GPG</a>
     </header>
     <main>
         <h1>Développeur</h1>
-        <p>
-            Notnian le Gris, plus tard connu sous le nom de Notnian le Blanc !
-        </p>
-        <img src="gandalf.gif" alt="gandalf">
+        <div>Mon nouveau site web est en cours de construction <span id="dots">...</span></div>
     </main>
     <footer>
         Made with ❤ by Notnian
     </footer>
+
+    <script>
+        (function infiniteLoop() {
+            setTimeout(function () {
+                const dots = document.getElementById('dots');
+                dots.innerText = { '.': '..', '..': '...', '...': '.' }[dots.innerText];
+                infiniteLoop();
+            }, 400)
+        })();     
+    </script>
 </body>
+
 </html>
