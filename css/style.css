@@ -70,6 +70,10 @@ svg {
     margin-top: 4rem;
 }
 
+.langs > a {
+    margin-right: .6rem;
+}
+
 .langs > a:after {
     background-color: #e3e3e3 !important;
 }
