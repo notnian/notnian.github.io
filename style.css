@@ -22,8 +22,14 @@ p {
     max-width: 28em;
 }
 
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .links > a {
     margin-right: 1rem;
+    margin-top: 1rem;
 }
 
 a {
@@ -57,4 +63,19 @@ svg {
     right: 0;
     display: block;
     width: 60%;
+}
+
+
+.lang {
+    margin-top: 4rem;
+}
+
+.langs > a:after {
+    background-color: #e3e3e3 !important;
+}
+
+.langs {
+    margin-top: .8rem;
+    display: flex;
+    flex-wrap: wrap;
 }
