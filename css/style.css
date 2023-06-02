@@ -9,6 +9,30 @@ body {
     color: #121314;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #121314;
+        color: #ebebeb;
+    }
+
+    a {
+        color: #ebebeb !important;
+    }
+
+    svg {
+        filter: invert(1);
+    }
+
+
+    a:after {
+        background-color: rgb(141, 116, 255, 0.64) !important;
+    }
+
+    .langs > a:after {
+        background-color: #2c2c2c !important;
+    }
+}
+
 h1 {
     font-size: 4.5em;
     font-weight: 500;
@@ -75,7 +99,7 @@ svg {
 }
 
 .langs > a:after {
-    background-color: #e3e3e3 !important;
+    background-color: #edeceb;
 }
 
 .langs {
