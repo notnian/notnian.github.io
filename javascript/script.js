@@ -23,3 +23,5 @@ const draw = async () => {
 }
 
 popmountain.onclick = draw
+
+window.onload = draw
